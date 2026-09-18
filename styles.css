@@ -123,6 +123,20 @@ footer a{
     text-align: center;
 }
 
+/*----------------------------------------------STYLES FOR THE EVENTS PAGE!---------------------------------------*/
+.event-intro {
+    background-color: #eaf2f8;
+}
+.featured-figure img {
+    max-height: 350px;
+    object-fit: cover;
+}
+.featured-figure figcaption {
+    font-size: 0.85rem;
+}
+
+
+
 
 
 
