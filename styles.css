@@ -1,6 +1,6 @@
 /*Main Page Header styles*/
 header{
-    background-color: rgb(235, 107, 107);
+    background-color: #D1E5F4;
     color: blue;
 }
 .mainPageHeader{
@@ -79,5 +79,26 @@ nav ul{
     font-weight: bold;
     text-decoration: none;
 }
+
+
+/*About Section Styles*/
+.about-section {
+    background-color: lightblue;
+}
+
+.about-content h1 {
+    font-size: 2.3rem;
+}
+
+.benefits {
+    display: flex;
+    gap: 25px;
+}
+.benefit {
+    flex: 1;
+    background-color: rgba(69, 221, 175, 0.226);
+}
+
+
 
 
