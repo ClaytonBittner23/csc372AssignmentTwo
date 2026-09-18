@@ -135,8 +135,44 @@ footer a{
     font-size: 0.85rem;
 }
 
+/*Makes it into the dual collum layout*/
+.event-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
 
+/* Right hand bar */
+.sidebar-card {
+    background-color: #12395b;
+    color: white;
+    padding: 25px;
+}
+.sidebar-card h2 {
+    color: white;
+    margin-top: 0;
+}
+.sidebar-card dl div {
+    padding: 13px 0;
+}
 
+.sidebar-card dt {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #b8cee0;
+}
+.sidebar-card dd {
+    margin: 3px 0 0;
+}
+
+/*Moves the sidebar below the main part*/
+@media (max-width: 750px) {
+    .event-layout {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
