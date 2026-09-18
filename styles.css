@@ -1,7 +1,7 @@
+/*Main Page Header styles*/
 header{
-    background-color: rgb(161, 42, 165);
+    background-color: rgb(235, 107, 107);
     color: blue;
-    padding: 18px;
 }
 .mainPageHeader{
     display: flex;
@@ -18,3 +18,32 @@ nav ul{
     list-style: none;
     gap: 25px;
 }
+
+
+/*Secondary hero section styles*/
+.heroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-image img {
+    border-radius: 12px;
+    max-height: 250px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #1261a0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/*Styles for the event cards on the main page*/
