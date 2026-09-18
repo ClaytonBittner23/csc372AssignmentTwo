@@ -47,3 +47,37 @@ nav ul{
 }
 
 /*Styles for the event cards on the main page*/
+.events-section {
+    padding: 25px;
+    background-color: gray;
+}
+.event-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.event-card {
+    background-color: lightgray;
+}
+.event-card img {
+    height: 190px;
+}
+.event-card-content {
+    padding: 10px;
+}
+
+
+.event-card h3 {
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+.event-card p {
+    color: white;
+}
+.event-card a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
