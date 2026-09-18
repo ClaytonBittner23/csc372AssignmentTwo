@@ -1,0 +1,20 @@
+header{
+    background-color: rgb(161, 42, 165);
+    color: blue;
+    padding: 18px;
+}
+.mainPageHeader{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.logo{
+    width: 60px;
+    height: auto;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
