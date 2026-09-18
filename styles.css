@@ -49,7 +49,7 @@ nav ul{
 /*Styles for the event cards on the main page*/
 .events-section {
     padding: 25px;
-    background-color: gray;
+    background-color: #AECCE4;
 }
 .event-grid {
     display: grid;
@@ -97,6 +97,30 @@ nav ul{
 .benefit {
     flex: 1;
     background-color: rgba(69, 221, 175, 0.226);
+}
+
+/*Footer Styles*/
+footer {
+    background-color: #9ABDDC;
+    color: white;
+}
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+footer p {
+    color: whitesmoke;
+}
+
+footer a{
+    color: whitesmoke;
+}
+
+.copyright {
+    border-top: 1px solid whitesmoke;
+    text-align: center;
 }
 
 
