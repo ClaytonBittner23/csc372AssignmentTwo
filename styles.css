@@ -174,5 +174,7 @@ footer a{
     }
 }
 
-
+.event-card.saved {
+    border: 3px solid #4CAF50;
+}
 

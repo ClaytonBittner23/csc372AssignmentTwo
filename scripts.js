@@ -29,13 +29,17 @@ cards.forEach(card => {
     card.appendChild(button);
 
     button.addEventListener("click", () => {
-        if (savedCards.has(card)){
+        //If the event is saved, remove the border and switch the text to Save Event, and remove it from the savedCards set
+        if (savedCards.has(card)) {
             savedCards.delete(card);
-            button.textContent = "Save Event"
+            button.textContent = "Save Event";
+            card.classList.remove("saved");
         }
-        else{
+        //If the event is not saved, add it to savedCards, switch the button to Remove Event, and add the border to it
+        else {
             savedCards.add(card);
             button.textContent = "Remove Event";
+            card.classList.add("saved");
         }
         showSavedEvents();
     });
