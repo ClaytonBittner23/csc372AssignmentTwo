@@ -37,8 +37,32 @@ cards.forEach(card => {
             savedCards.add(card);
             button.textContent = "Remove Event";
         }
+        showSavedEvents();
     });
 });
 
+function showSavedEvents(){
+    while (savedCardList.firstChild){
+        savedCardList.removeChild(savedCardList.firstChild);
+    }
+    //displays the message if there are no saved events
+    if (savedCards.size === 0){
+        const message = document.createElement("p");
+        message.textContent = "No Saved Events, Please Save One!";
+        savedCardList.appendChild(message);
+        return;
+    }
+    //for each card, copy the name and date off of it and chuck it in a div
+    savedCards.forEach(card => {
+        const eventName = card.querySelector("h3");
+        const eventDate = card.querySelector("p");
 
+        const savedEvent = document.createElement("div");
+
+        savedEvent.appendChild(eventName.cloneNode(true));
+        savedEvent.appendChild(eventDate.cloneNode(true));
+
+        savedCardList.appendChild(savedEvent);
+    });
+}
 
